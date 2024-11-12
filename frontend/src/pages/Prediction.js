@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Card, Container, Row } from 'react-bootstrap';
 import io from 'socket.io-client';
 
-const SOCKET_SERVER_URL = 'http://localhost:4000';
+const SOCKET_SERVER_URL = 'https://bikerbackend.onrender.com';
 
 const Prediction = () => {
   const codeLines = [
