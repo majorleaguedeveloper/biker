@@ -19,7 +19,7 @@ function Signup() {
       return;
     }
     try {
-      const response = await axios.post('/api/users/signup', {
+      const response = await axios.post('https://bikerbackend.onrender.com/api/users/signup', {
         name,
         phone,
         password,
