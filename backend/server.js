@@ -30,7 +30,7 @@ app.use('/api/mpesa', mpesaRoutes);
 let gameData = {
   timer: 1.00, // Ensure the timer starts with two decimal places
   isGameRunning: false,
-  results: [1 ,2, 3, 4, 5, 6, 7, 8],
+  results: [1.37 ,1.37, 1.37, 1.37, 1.37, 1.37, 1.37, 1.37],
   crashPoint: null,
   countdown: 15
 };
@@ -85,7 +85,7 @@ const crushGame = () => {
 
   // Start countdown before restarting the game
   gameData.countdown = 10;
-  gameData.crashPoint = (Math.random() * 9 + 1).toFixed(2); // Generate crash point at the start of countdown
+  gameData.crashPoint = 1.37//(Math.random() * 9 + 1).toFixed(2); // Generate crash point at the start of countdown
   io.emit('crashPoint', gameData.crashPoint);
   console.log(gameData.crashPoint);
   io.emit('countdownUpdate', gameData.countdown);

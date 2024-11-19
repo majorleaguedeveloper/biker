@@ -4,6 +4,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { Form, Button, Alert } from 'react-bootstrap';
 import { Store } from '../Store';  // Import the Store context
+import { Link } from 'react-router-dom';
 
 function Signin() {
   const [phone, setPhone] = useState('');
@@ -57,7 +58,10 @@ function Signin() {
         <Button variant="primary" type="submit" className="w-100 mt-4 mb-5">
           Sign In
         </Button>
-        <p>Do not have an account? <span style={{color: 'blue'}}>Register</span></p>
+        <p>Do not have an account? {' '}
+          <Link to="/register" style={{ color: 'blue', textDecoration: 'underline' }}>
+            Register
+          </Link></p>
       </Form>
     </div>
   );

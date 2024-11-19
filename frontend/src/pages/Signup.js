@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { Form, Button, Alert } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 function Signup() {
   const [name, setName] = useState('');
@@ -80,7 +81,10 @@ function Signup() {
         <Button variant="primary" type="submit" className="w-100 mt-4 mb-3">
           Sign Up
         </Button>
-        <p>Already have an account? <span style={{color: 'blue'}}>Login</span></p>
+        <div>Already have an account? {' '}
+        <Link to="/login" style={{ color: 'blue', textDecoration: 'underline' }}>
+          Login
+        </Link></div>
       </Form>
     </div>
   );
