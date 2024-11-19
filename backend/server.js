@@ -60,7 +60,7 @@ const startGame = () => {
   clearInterval(timerInterval);
   timerInterval = setInterval(() => {
     if (gameData.isGameRunning) {
-      gameData.timer = parseFloat((gameData.timer + 0.03).toFixed(2)); // Ensure timer has two decimal places
+      gameData.timer = parseFloat((gameData.timer + 0.01).toFixed(2)); // Ensure timer has two decimal places
       io.emit('timerUpdate', gameData.timer); // Emit the number with two decimals
 
       if (parseFloat(gameData.timer) >= parseFloat(gameData.crashPoint)) {
