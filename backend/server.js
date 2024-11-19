@@ -30,7 +30,7 @@ app.use('/api/mpesa', mpesaRoutes);
 let gameData = {
   timer: 1.00, // Ensure the timer starts with two decimal places
   isGameRunning: false,
-  results: [1.37 ,1.37, 1.37, 1.37, 1.37, 1.37, 1.37, 1.37],
+  results: [1.35 ,1.35, 1.35, 1.35, 1.35, 1.35, 1.35, 1.35],
   crashPoint: null,
   countdown: 15
 };
