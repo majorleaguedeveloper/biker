@@ -24,12 +24,12 @@ const Results = () => {
   return (
     <div className='bg-black my-1 d-flex align-items-center' style={{height:'40px', justifyContent:'space-between', border: 'solid', borderColor: 'grey', borderWidth: '1px'}}>
       <span className='mx-1' style={{color:'white'}}>{results[0]}</span>
-      <span style={{color:'white'}}>{results[1]}</span>
-      <span style={{color:'pink'}}>{results[2]}</span>
-      <span style={{color:'purple'}}>{results[3]}</span>
+      <span style={{color:'pink'}}>{results[1]}</span>
+      <span style={{color:'purple'}}>{results[2]}</span>
+      <span style={{color:'blue'}}>{results[3]}</span>
       <span style={{color:'blue'}}>{results[4]}</span>
-      <span style={{color:'red'}}>{results[5]}</span>
-      <span style={{color:'white'}}>{results[6]}</span>
+      <span style={{color:'purple'}}>{results[5]}</span>
+      <span style={{color:'pink'}}>{results[6]}</span>
       <span className='mx-1' style={{color:'white'}}>{results[7]}</span>
     </div>
   )
