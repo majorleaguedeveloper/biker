@@ -30,7 +30,7 @@ const Prediction = () => {
   }, [])
 
   return (
-    <Container fluid>
+    <Container fluid style={{height: '100vh'}}>
       <Row className="justify-content-center mt-4">
         <Card
           style={{
@@ -44,10 +44,12 @@ const Prediction = () => {
         >
           <Card.Body>
             <pre style={{ whiteSpace: 'pre-wrap', fontSize: '1rem' }}>
-              {point}
+              
               {codeLines.map((line, index) => (
                 <div key={index}>{line}</div>
               ))}
+
+            {point}
             </pre>
           </Card.Body>
         </Card>
